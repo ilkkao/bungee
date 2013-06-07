@@ -41,7 +41,7 @@ clean:
 
 $(BUNGEE): $(BUNGEE_SOURCES)
 	@echo "*** Create batched $(BUNGEE) file."
-	cat $(BUNGEE_SOURCES) >> $(BUNGEE)
+	cat $(BUNGEE_SOURCES) > $(BUNGEE)
 
 %.js : %.jml
 	@echo "*** Generate JavaScript from JML ($< -> $@)"
